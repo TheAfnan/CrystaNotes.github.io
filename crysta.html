@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CrystaNotes</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="crysta.css">
+</head>
+<body>
+  <header>
+    <h1>CrystaNotes</h1>
+    <nav>
+      <span class="sidebar-toggle" onclick="toggleSidebar()">&#9776;</span>
+      <i class="fa fa-home"></i>
+      <a href="#" class="nav-link">Home</a>
+      <i class="fa fa-book"></i>
+      <a href="#content" class="nav-link">Resources</a>
+      <i class="fa fa-info-circle"></i>
+      <a href="javascript:void(0);" class="nav-link" onclick="toggleSidebar()">About & Contact</a>
+    </nav>
+    <h2>Welcome to the CrystaNotes</h2>
+    <p>Your one-stop solution to find and share notes semester-wise. Navigate through the semesters to access relevant materials or upload your notes to help others.</p>
+  </header>
+  <div class="container" id="content">
+    <!-- First Year -->
+    <div class="year-section">
+      <h1><u>First Year</u></h1>
+      <div class="grid">
+        <div class="card">
+          <h3>CSE, CSE-AIDS & CSE-AIFM</h3>
+          <div class="button-container">
+            <button onclick="toggleSemester('semester1')">Semester 1</button>
+            <button onclick="toggleSemester('semester2')">Semester 2</button>
+          </div>
+          <div id="semester1" style="display:flexbox;">
+            <h4>Semester 1</h4>
+            <div class="subject">
+              <h5>Maths</h5>
+              <a href="maths.pdf" target="maths.pdf"><button>Notes</button></a>
+              <button>PYQs</button>
+            </div>
+            <div class="subject">
+              <h5>Physics</h5>
+              <button>Notes</button>
+              <button>PYQs</button>
+            </div>
+            <div class="subject">
+              <h5>C Programming</h5>
+              <button>Notes</button>
+              <button>PYQs</button>
+            </div>
+            <div class="subject">
+              <h5>EEE</h5>
+              <button>Notes</button>
+              <button>PYQs</button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Mech</h3>
+          <div class="button-container">
+            <button onclick="toggleSemester('mechSemester1')">Semester 1</button>
+            <button onclick="toggleSemester('mechSemester2')">Semester 2</button>
+          </div>
+          <div id="mechSemester1" style="display:none;">
+            <h4>Semester 1</h4>
+            <!-- Add subjects for Mech Semester 1 here -->
+          </div>
+          <div id="mechSemester2" style="display:none;">
+            <h4>Semester 2</h4>
+            <!-- Add subjects for Mech Semester 2 here -->
+          </div>
+        </div>
+        <div class="card">
+          <h3>ECE</h3>
+          <div class="button-container">
+            <button onclick="toggleSemester('eceSemester1')">Semester 1</button>
+            <button onclick="toggleSemester('eceSemester2')">Semester 2</button>
+          </div>
+          <div id="eceSemester1" style="display:none;">
+            <h4>Semester 1</h4>
+            <!-- Add subjects for ECE Semester 1 here -->
+          </div>
+          <div id="eceSemester2" style="display:none;">
+            <h4>Semester 2</h4>
+            <!-- Add subjects for ECE Semester 2 here -->
+          </div>
+        </div>
+        <div class="card">
+          <h3>EE</h3>
+          <div class="button-container">
+            <button onclick="toggleSemester('eeSemester1')">Semester 1</button>
+            <button onclick="toggleSemester('eeSemester2')">Semester 2</button>
+          </div>
+          <div id="eeSemester1" style="display:none;">
+            <h4>Semester 1</h4>
+            <!-- Add subjects for EE Semester 1 here -->
+          </div>
+          <div id="eeSemester2" style="display:none;">
+            <h4>Semester 2</h4>
+            <!-- Add subjects for EE Semester 2 here -->
+          </div>
+        </div>
+        <div class="card">
+          <h3>Civil</h3>
+          <div class="button-container">
+            <button onclick="toggleSemester('civilSemester1')">Semester 1</button>
+            <button onclick="toggleSemester('civilSemester2')">Semester 2</button>
+          </div>
+          <div id="civilSemester1" style="display:none;">
+            <h4>Semester 1</h4>
+            <!-- Add subjects for Civil Semester 1 here -->
+          </div>
+          <div id="civilSemester2" style="display:none;">
+            <h4>Semester 2</h4>
+            <!-- Add subjects for Civil Semester 2 here -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>      
+  <div id="semester2" style="display:none;">
+    <h4>Semester 2</h4>
+    <div class="subject">
+      <h5> Mathematics-2 </h5>
+      <button>Notes</button>
+      <button>PYQs</button>
+      <h5>Chemistry</h5>
+      <button>Notes</button>
+      <button>PYQs</button>
+      <h5>Mechanics</h5>
+      <button>Notes</button>
+      <button>PYQs</button>
+      <h5>Professional Communication</h5>
+      <button>Notes</button>
+      <button>PYQs</button>
+      <h5>Python Programming</h5>
+      <button>Notes</button>
+      <button>PYqs</button>
+    </div>
+  </div>
+  <!-- Add content for Semester 2 here -->
+</div>
+</div>
+
+<!-- Second Year -->
+<div class="year-section">
+  <h1><u>Second Year</u></h1>
+  <div class="grid">
+    <div class="card">
+      <h3>CSE, CSE-AIDS & CSE-AIFM</h3>
+      <div class="button-container">
+        <button onclick="toggleSemester('semester3')">Semester 3</button>
+        <button onclick="toggleSemester('semester4')">Semester 4</button>
+      </div>
+      <div id="semester3" style="display:none;">
+        <h4>Semester 3</h4>
+        <!-- Add subjects for Semester 3 here -->
+      </div>
+      <div id="semester4" style="display:none;">
+        <h4>Semester 4</h4>
+        <!-- Add subjects for Semester 4 here -->
+      </div>
+    </div>
+    <div class="card">
+      <h3>Mech</h3>
+      <div class="button-container">
+        <button onclick="toggleSemester('mechSemester3')">Semester 3</button>
+        <button onclick="toggleSemester('mechSemester4')">Semester 4</button>
+      </div>
+      <div id="mechSemester3" style="display:none;">
+        <h4>Semester 3</h4>
+        <!-- Add subjects for Mech Semester 3 here -->
+      </div>
+      <div id="mechSemester4" style="display:none;">
+        <h4>Semester 4</h4>
+        <!-- Add subjects for Mech Semester 4 here -->
+      </div>
+    </div>
+    <div class="card">
+      <h3>ECE</h3>
+      <div class="button-container">
+        <button onclick="toggleSemester('eceSemester3')">Semester 3</button>
+        <button onclick="toggleSemester('eceSemester4')">Semester 4</button>
+      </div>
+      <div id="eceSemester3" style="display:none;">
+        <h4>Semester 3</h4>
+        <!-- Add subjects for ECE Semester 3 here -->
+      </div>
+      <div id="eceSemester4" style="display:none;">
+        <h4>Semester 4</h4>
+        <!-- Add subjects for ECE Semester 4 here -->
+      </div>
+    </div>
+    <div class="card">
+      <h3>EE</h3>
+      <div class="button-container">
+        <button onclick="toggleSemester('eeSemester3')">Semester 3</button>
+        <button onclick="toggleSemester('eeSemester4')">Semester 4</button>
+      </div>
+      <div id="eeSemester3" style="display:none;">
+        <h4>Semester 3</h4>
+        <!-- Add subjects for EE Semester 3 here -->
+      </div>
+      <div id="eeSemester4" style="display:none;">
+        <h4>Semester 4</h4>
+        <!-- Add subjects for EE Semester 4 here -->
+      </div>
+    </div>
+    <div class="card">
+      <h3>Civil</h3>
+      <div class="button-container">
+        <button onclick="toggleSemester('civilSemester3')">Semester 3</button>
+        <button onclick="toggleSemester('civilSemester4')">Semester 4</button>
+      </div>
+      <div id="civilSemester3" style="display:none;">
+        <h4>Semester 3</h4>
+        <!-- Add subjects for Civil Semester 3 here -->
+      </div>
+      <div id="civilSemester4" style="display:none;">
+        <h4>Semester 4</h4>
+        <!-- Add subjects for Civil Semester 4 here -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Third Year -->
+<div class="year-section">
+  <h1><u>Third Year</u></h1>
+  <div class="grid">
+    <div class="card">
+      <h3>CSE, CSE-AIDS & CSE-AIFM</h3>
+      <div class="button-container">
+        <button onclick="toggleSemester('semester5')">Semester 5</button>
+        <button onclick="toggleSemester('semester6')">Semester 6</button>
+      </div>
+      <div id="semester5" style="display:none;">
+        <h4>Semester 5</h4>
+        <!-- Add subjects for Semester 5 here -->
+      </div>
+      <div id="semester6" style="display:none;">
+        <h4>Semester 6</h4>
+        <!-- Add subjects for Semester 6 here -->
+      </div>
+    </div>
+    <div class="card">
+      <h3>Mech</h3>
+      <div class="button-container">
+        <button onclick="toggleSemester('mechSemester5')">Semester 5</button>
+        <button onclick="toggleSemester('mechSemester6')">Semester 6</button>
+      </div>
+      <div id="mechSemester5" style="display:none;">
+        <h4>Semester 5</h4>
+        <!-- Add subjects for Mech Semester 5 here -->
+      </div>
+      <div id="mechSemester6" style="display:none;">
+        <h4>Semester 6</h4>
+        <!-- Add subjects for Mech Semester 6 here -->
+      </div>
+    </div>
+    <div class="card">
+      <h3>ECE</h3>
+      <div class="button-container">
+        <button onclick="toggleSemester('eceSemester5')">Semester 5</button>
+        <button onclick="toggleSemester('eceSemester6')">Semester 6</button>
+      </div>
+      <div id="eceSemester5" style="display:none;">
+        <h4>Semester 5</h4>
+        <!-- Add subjects for ECE Semester 5 here -->
+      </div>
+      <div id="eceSemester6" style="display:none;">
+        <h4>Semester 6</h4>
+        <!-- Add subjects for ECE Semester 6 here -->
+      </div>
+    </div>
+    <div class="card">
+      <h3>EE</h3>
+      <div class="button-container">
+        <button onclick="toggleSemester('eeSemester5')">Semester 5</button>
+        <button onclick="toggleSemester('eeSemester6')">Semester 6</button>
+      </div>
+      <div id="eeSemester5" style="display:none;">
+        <h4>Semester 5</h4>
+        <!-- Add subjects for EE Semester 5 here -->
+      </div>
+      <div id="eeSemester6" style="display:none;">
+        <h4>Semester 6</h4>
+        <!-- Add subjects for EE Semester 6 here -->
+      </div>
+    </div>
+    <div class="card">
+      <h3>Civil</h3>
+      <div class="button-container">
+        <button onclick="toggleSemester('civilSemester5')">Semester 5</button>
+        <button onclick="toggleSemester('civilSemester6')">Semester 6</button>
+      </div>
+      <div id="civilSemester5" style="display:none;">
+        <h4>Semester 5</h4>
+        <!-- Add subjects for Civil Semester 5 here -->
+      </div>
+      <div id="civilSemester6" style="display:none;">
+        <h4>Semester 6</h4>
+        <!-- Add subjects for Civil Semester 6 here -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Fourth Year -->
+<div class="year-section">
+  <h1><u>Fourth Year</u></h1>
+  <div class="grid">
+    <div class="card">
+      <h3>CSE, CSE-AIDS & CSE-AIFM</h3>
+      <div class="button-container">
+        <button onclick="toggleSemester('semester7')">Semester 7</button>
+        <button onclick="toggleSemester('semester8')">Semester 8</button>
+      </div>
+      <div id="semester7" style="display:none;">
+        <h4>Semester 7</h4>
+        <!-- Add subjects for Semester 7 here -->
+      </div>
+      <div id="semester8" style="display:none;">
+        <h4>Semester 8</h4>
+        <!-- Add subjects for Semester 8 here -->
+      </div>
+    </div>
+    <div class="card">
+      <h3>Mech</h3>
+      <div class="button-container">
+        <button onclick="toggleSemester('mechSemester7')">Semester 7</button>
+        <button onclick="toggleSemester('mechSemester8')">Semester 8</button>
+      </div>
+      <div id="mechSemester7" style="display:none;">
+        <h4>Semester 7</h4>
+        <!-- Add subjects for Mech Semester 7 here -->
+      </div>
+      <div id="mechSemester8" style="display:none;">
+        <h4>Semester 8</h4>
+        <!-- Add subjects for Mech Semester 8 here -->
+      </div>
+    </div>
+    <div class="card">
+      <h3>ECE</h3>
+      <div class="button-container">
+        <button onclick="toggleSemester('eceSemester7')">Semester 7</button>
+        <button onclick="toggleSemester('eceSemester8')">Semester 8</button>
+      </div>
+      <div id="eceSemester7" style="display:none;">
+        <h4>Semester 7</h4>
+        <!-- Add subjects for ECE Semester 7 here -->
+      </div>
+      <div id="eceSemester8" style="display:none;">
+        <h4>Semester 8</h4>
+        <!-- Add subjects for ECE Semester 8 here -->
+      </div>
+    </div>
+    <div class="card">
+      <h3>EE</h3>
+      <div class="button-container">
+        <button onclick="toggleSemester('eeSemester7')">Semester 7</button>
+        <button onclick="toggleSemester('eeSemester8')">Semester 8</button>
+      </div>
+      <div id="eeSemester7" style="display:none;">
+        <h4>Semester 7</h4>
+        <!-- Add subjects for EE Semester 7 here -->
+      </div>
+      <div id="eeSemester8" style="display:none;">
+        <h4>Semester 8</h4>
+        <!-- Add subjects for EE Semester 8 here -->
+      </div>
+    </div>
+    <div class="card">
+      <h3>Civil</h3>
+      <div class="button-container">
+        <button onclick="toggleSemester('civilSemester7')">Semester 7</button>
+        <button onclick="toggleSemester('civilSemester8')">Semester 8</button>
+      </div>
+      <div id="civilSemester7" style="display:none;">
+        <h4>Semester 7</h4>
+        <!-- Add subjects for Civil Semester 7 here -->
+      </div>
+      <div id="civilSemester8" style="display:none;">
+        <h4>Semester 8</h4>
+        <!-- Add subjects for Civil Semester 8 here -->
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div id="sidebar" class="sidebar">
+  <a href="javascript:void(0);" class="closebtn" onclick="toggleSidebar()">&times;</a>
+  <div class="about-section">
+    <h2>About CrystaNotes</h2>
+    <p>CrystaNotes is a platform designed to help students find and share notes for various semesters and subjects. Our mission is to create a collaborative environment where students can easily access study materials and contribute their own notes to help others. Whether you're looking for notes, previous year question papers, or other resources, CrystaNotes has got you covered.</p>
+    <p>We believe in the power of community and the importance of sharing knowledge. By providing a centralized
+  </div>
+</div>
+<script src="crysta.js"></script>
+<script>
+  function toggleSidebar() {
+    var sidebar = document.getElementById("sidebar");
+    if (sidebar.style.display === "block") {
+      sidebar.style.display = "none";
+    } else {
+      sidebar.style.display = "block";
+    }
+  }
+</script>
+<footer>
+  <div class="footer-content">
+    <p>All rights reserved. Created by Mohd Afnan</p>
+    <p>Contact us: <a href="mailto:info@crystanotes.com">info@crystanotes.com</a></p>
+    <div class="social-media">
+      <a href="https://www.facebook.com/crystanotes" target="_blank"><i class="fa fa-facebook"></i></a>
+      <a href="https://www.twitter.com/crystanotes" target="_blank"><i class="fa fa-twitter"></i></a>
+      <a href="https://www.linkedin.com/company/crystanotes" target="_blank"><i class="fa fa-linkedin"></i></a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
